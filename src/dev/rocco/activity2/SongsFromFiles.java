@@ -3,15 +3,13 @@ import java.util.*;
 import java.io.*;
 
 public class SongsFromFiles
-
 {
     public static void main(String[]args)
-
     {
         try
         {
-            Scanner input = new Scanner(new File("mySongs.txt"));
-            ArrayList<Song> mySongs = new ArrayList<Song>();
+            Scanner input = new Scanner(new File("src/dev/rocco/activity2/mySongs.txt"));
+            ArrayList<Song> mySongs = new ArrayList<>();
             while(input.hasNext())
             {
                 String t = input.nextLine();
@@ -22,9 +20,6 @@ public class SongsFromFiles
                 mySongs.add(mySong);
 
             }
-
-
-
 
         }
         catch(IOException err)
