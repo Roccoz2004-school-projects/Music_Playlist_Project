@@ -16,13 +16,7 @@ public class Song {
     /**
      * Constructor for objects of class Song
      */
-    public Song() {
-        // initialise instance variables
-        title = "Chopsticks";
-        artist = "anonymous";
-        genre = "pop";
-        time = 0.0;
-    }
+
 
     public Song(String t, String a, String g, double m) {
         // initialise instance variables
@@ -42,5 +36,8 @@ public class Song {
 
     public void play() {
         System.out.println("Title: " + title);
+    }
+    public void play(int x) {
+
     }
 }
