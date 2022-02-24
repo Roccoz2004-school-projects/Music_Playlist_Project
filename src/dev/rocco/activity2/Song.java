@@ -24,6 +24,7 @@ public class Song {
         artist = a;
         genre = g;
         time = m;
+        String[] array = {t,a,g, String.valueOf(m)};
     }
 
     public String getGenre() {
@@ -37,7 +38,7 @@ public class Song {
     public void play() {
         System.out.println("Title: " + title);
     }
-    public void play(int x) {
-
+    public String play(String x) {
+        return x;
     }
 }
