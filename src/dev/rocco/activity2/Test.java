@@ -11,7 +11,7 @@ public class Test {
         try {
             Scanner input = new Scanner(new File("src/dev/rocco/activity2/mySongs.txt"));
             ArrayList<Song> mySongs = new ArrayList<>();
-            Song mySong = null;
+            Song mySong;
 
             while (input.hasNext()) {
                 String t = input.nextLine();
@@ -19,7 +19,7 @@ public class Test {
                 String m = input.nextLine();
                 String g = input.nextLine();
                 mySong = new Song(t, a, g, Double.parseDouble(m));
-                if (g.equals("classical")) {
+                if (a.equals("Beatles")) {
                     mySong.play();
                 }
             }
