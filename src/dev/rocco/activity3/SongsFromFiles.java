@@ -21,11 +21,11 @@ public class SongsFromFiles {
                 String m = input.nextLine();
                 String g = input.nextLine();
 
-                Song.mySong(t,a,g,m);
-                Song.play();
                 mySongs.add(Song.mySong(t,a,g,m));
             }
-            System.out.println(mySongs);
+            for (String i : mySongs) {
+                System.out.println(i);
+            }
 
         } catch (IOException err) {
             System.out.println("File Not Found.");

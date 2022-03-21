@@ -18,7 +18,7 @@ public class Test {
                 String a = input.nextLine();
                 String m = input.nextLine();
                 String g = input.nextLine();
-                mySong = new Song(t, a, g, Double.parseDouble(m));
+                mySong = new Song();
                 if (a.equals("Beatles")) {
                     mySong.play();
                 }

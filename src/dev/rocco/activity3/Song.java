@@ -26,8 +26,8 @@ public class Song {
         genre = g;
         time = m;
         String[] array = {t,a,g,m};
-        String info = "(" + t + ": " + a + ")";
-        return info;
+        String output = "Title: " + t;
+        return output;
     }
 
     public String getGenre() {
