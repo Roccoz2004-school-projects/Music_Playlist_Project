@@ -25,7 +25,6 @@ public class Song {
         artist = a;
         genre = g;
         time = m;
-        String[] array = {t,a,g,m};
         String output = "Title: " + t;
         return output;
     }

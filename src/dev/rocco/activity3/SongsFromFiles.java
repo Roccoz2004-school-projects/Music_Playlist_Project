@@ -3,6 +3,7 @@ package dev.rocco.activity3;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 import java.util.Random;
 
@@ -23,8 +24,10 @@ public class SongsFromFiles {
 
                 mySongs.add(Song.mySong(t,a,g,m));
             }
-            for (String i : mySongs) {
-                System.out.println(i);
+
+            for (int i = 0; i < mySongs.size(); i++) {
+                int index = (int) (Math.random() * (mySongs.size()));
+                System.out.println(mySongs.get(index));
             }
 
         } catch (IOException err) {
