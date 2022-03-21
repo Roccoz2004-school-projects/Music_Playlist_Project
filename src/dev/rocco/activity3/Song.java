@@ -1,4 +1,4 @@
-package dev.rocco.activity2;
+package dev.rocco.activity3;
 
 /**
  * Using music to motivate dynamic data structures.
@@ -11,19 +11,23 @@ public class Song {
     private String title;
     private String artist;
     private String genre;
-    private double time;
+    private String time;
 
     /**
      * Constructor for objects of class Song
+     *
      */
 
-    public Song(String t, String a, String g, double m) {
+
+    public String mySong(String t, String a, String g, String m) {
         // initialise instance variables
         title = t;
         artist = a;
         genre = g;
         time = m;
-        String[] array = {t,a,g, String.valueOf(m)};
+        String[] array = {t,a,g,m};
+        String info = "(" + t + ": " + a + ")";
+        return info;
     }
 
     public String getGenre() {
@@ -31,7 +35,7 @@ public class Song {
     }
 
     public double getTime() {
-        return time;
+        return Double.parseDouble(time);
     }
 
     public void play() {
