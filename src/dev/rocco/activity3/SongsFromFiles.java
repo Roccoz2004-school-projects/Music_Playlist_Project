@@ -5,10 +5,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-import java.util.Random;
 
 public class SongsFromFiles {
-    public static Random rnd = new Random();
     public static Song Song = new Song();
     public static ArrayList<String> mySongs = new ArrayList<>();
 
@@ -25,9 +23,9 @@ public class SongsFromFiles {
                 mySongs.add(Song.mySong(t,a,g,m));
             }
 
-            for (int i = 0; i < mySongs.size(); i++) {
-                int index = (int) (Math.random() * (mySongs.size()));
-                System.out.println(mySongs.get(index));
+            Collections.shuffle(mySongs);
+            for (String i : mySongs){
+                System.out.println(i);
             }
 
         } catch (IOException err) {
